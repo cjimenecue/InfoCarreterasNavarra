@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
 class ListViewScreen extends StatelessWidget {
-  final listaTipos = [
-    "Carretera Nacional",
-    "Autopista",
-    "Autovia"
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -14,16 +9,14 @@ class ListViewScreen extends StatelessWidget {
         title: Text("ListView Screen"),
       ),
       body: ListView(
-        children: [
-          _listaElementos(),
-        ],
+        children: _listaElementos(),
       ),
     );
   }
 
-  List<Widget>_listaElementos() {
+  List<Widget> _listaElementos() {
     List<Widget> lista = [];
-    listaTipos.forEach((tipo) { 
+    ListaIncidencias.forEach((tipo) {
       final title = new ListTile(
         title: Text(tipo),
       );
