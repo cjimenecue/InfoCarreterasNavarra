@@ -18,3 +18,5 @@ class IncidenciasProvider {
     return listaIncidencias;
   }
 }
+
+final incidenciasProvider = new IncidenciasProvider();
