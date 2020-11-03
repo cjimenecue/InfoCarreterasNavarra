@@ -1,16 +1,17 @@
 // To parse this JSON data, do
 //
-//     final puntoReciclajr = puntoReciclajrFromJson(jsonString);
+//     final incidenciaCarretera = incidenciaCarreteraFromJson(jsonString);
 
 import 'dart:convert';
 
-PuntoReciclajr puntoReciclajrFromJson(String str) =>
-    PuntoReciclajr.fromJson(json.decode(str));
+IncidenciaCarretera incidenciaCarreteraFromJson(String str) =>
+    IncidenciaCarretera.fromJson(json.decode(str));
 
-String puntoReciclajrToJson(PuntoReciclajr data) => json.encode(data.toJson());
+String incidenciaCarreteraToJson(IncidenciaCarretera data) =>
+    json.encode(data.toJson());
 
-class PuntoReciclajr {
-  PuntoReciclajr({
+class IncidenciaCarretera {
+  IncidenciaCarretera({
     this.ultimaActualizacion,
     this.titulo,
     this.ubicacion,
@@ -40,7 +41,8 @@ class PuntoReciclajr {
   String carretera;
   String pk;
 
-  factory PuntoReciclajr.fromJson(Map<String, dynamic> json) => PuntoReciclajr(
+  factory IncidenciaCarretera.fromJson(Map<String, dynamic> json) =>
+      IncidenciaCarretera(
         ultimaActualizacion: json["Ultima_actualizacion"],
         titulo: json["Titulo"],
         ubicacion: json["Ubicacion"],
