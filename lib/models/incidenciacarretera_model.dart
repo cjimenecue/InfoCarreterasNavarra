@@ -20,8 +20,8 @@ class PuntoReciclajr {
     this.categoria,
     this.tipo,
     this.otrosDatos,
-    this.coordX,
-    this.coordY,
+    this.coordXEnEpsg25830,
+    this.coordYEnEpsg25830,
     this.carretera,
     this.pk,
   });
@@ -35,8 +35,8 @@ class PuntoReciclajr {
   String categoria;
   String tipo;
   String otrosDatos;
-  String coordX;
-  String coordY;
+  String coordXEnEpsg25830;
+  String coordYEnEpsg25830;
   String carretera;
   String pk;
 
@@ -50,8 +50,8 @@ class PuntoReciclajr {
         categoria: json["Categoria"],
         tipo: json["Tipo"],
         otrosDatos: json["Otros_datos"],
-        coordX: json["Coord_X_en_EPSG_25830"],
-        coordY: json["Coord_Y_en_EPSG_25830"],
+        coordXEnEpsg25830: json["Coord_X_en_EPSG_25830"],
+        coordYEnEpsg25830: json["Coord_Y_en_EPSG_25830"],
         carretera: json["Carretera"],
         pk: json["PK"],
       );
@@ -66,8 +66,8 @@ class PuntoReciclajr {
         "Categoria": categoria,
         "Tipo": tipo,
         "Otros_datos": otrosDatos,
-        "Coord_X_en_EPSG_25830": coordX,
-        "Coord_Y_en_EPSG_25830": coordY,
+        "Coord_X_en_EPSG_25830": coordXEnEpsg25830,
+        "Coord_Y_en_EPSG_25830": coordYEnEpsg25830,
         "Carretera": carretera,
         "PK": pk,
       };
