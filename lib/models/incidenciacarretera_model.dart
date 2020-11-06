@@ -11,6 +11,12 @@ String incidenciaCarreteraToJson(IncidenciaCarretera data) =>
     json.encode(data.toJson());
 
 class IncidenciaCarretera {
+  //final _dir = "assets/images/local/";
+
+  //getImgPath() {
+  //  return _dir + this.carretera.split("-")[0];
+  //}
+
   IncidenciaCarretera({
     this.ultimaActualizacion,
     this.titulo,
