@@ -8,6 +8,7 @@ class IncidenciasProvider {
   List<IncidenciaCarretera> listaIncidencias = [];
   List<String> listaTiposCarretera = [];
   List<String> listaCarreteraTipo = [];
+  List<IncidenciaCarretera> listaIncidenciasFiltradas = [];
 
   Future<List<IncidenciaCarretera>> cargarIncidencias() async {
     final datos =
@@ -46,6 +47,19 @@ class IncidenciasProvider {
       }
     });
     return listaCarreteraTipo;
+  }
+
+  Future<List<IncidenciaCarretera>> cargarIncidenciasFiltradas(String carretera) async {
+    if (listaIncidencias.length == 0) {
+      await cargarIncidencias();
+    }
+    listaIncidenciasFiltradas = [];
+    listaIncidencias.forEach((cr) {
+      if (cr.carretera == carretera)  {
+        listaIncidenciasFiltradas.add(cr);
+      }
+    });
+    return listaIncidenciasFiltradas;
   }
 }
 
