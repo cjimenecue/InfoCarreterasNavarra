@@ -101,6 +101,7 @@ class _MapaInfoScreenState extends State<MapaInfoScreen> {
             child: Icon(
               Icons.dangerous,
               color: Colors.red,
+              size: 40,
             ),
           ),
         ),

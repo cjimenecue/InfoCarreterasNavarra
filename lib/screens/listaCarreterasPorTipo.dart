@@ -3,9 +3,11 @@ import 'package:info_carreteras_navarra/providers/incidencias_provider.dart';
 import 'package:info_carreteras_navarra/screens/listaIncidenciasPorCarretera.dart';
 import 'package:info_carreteras_navarra/screens/listview_screen.dart';
 
+import 'mapa_info_screen.dart';
+
 class ListaCarreterasPorTipo extends StatelessWidget {
   final String tipo;
-  
+
   ListaCarreterasPorTipo({@required this.tipo});
 
   @override
@@ -36,17 +38,32 @@ class ListaCarreterasPorTipo extends StatelessWidget {
 
   _listaElementos(List<String> data, context) {
     final List<Widget> lst = [];
-    data.forEach((ic) { 
+    data.forEach((ic) {
       final w = ListTile(
-        title: Text(ic, style: TextStyle(fontSize: 18),),
+        title: Text(
+          ic,
+          style: TextStyle(fontSize: 18),
+        ),
         trailing: Icon(Icons.keyboard_arrow_right),
-        onTap: () {
-            //print(lista[index]);
+        onTap: () async {
+          //print(lista[index]);
+          var incidencias =
+              await incidenciasProvider.cargarIncidenciasFiltradas(ic);
+          if (incidencias.length == 1) {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ListaIncidenciasPorCarretera(carretera: ic)),);
-          },
+                    builder: (context) =>
+                        MapaInfoScreen(incidencia: incidencias[0])));
+          } else {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (context) =>
+                      ListaIncidenciasPorCarretera(carretera: ic)),
+            );
+          }
+        },
       );
       lst.add(w);
       lst.add(Divider());

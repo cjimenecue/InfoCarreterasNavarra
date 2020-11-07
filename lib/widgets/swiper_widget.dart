@@ -31,9 +31,11 @@ class SwiperWidget extends StatelessWidget {
           onTap: () {
             //print(lista[index]);
             Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => ListaCarreterasPorTipo(tipo: lista[index])),);
+              context,
+              MaterialPageRoute(
+                  builder: (context) =>
+                      ListaCarreterasPorTipo(tipo: lista[index])),
+            );
           },
           child: Column(
             children: [
