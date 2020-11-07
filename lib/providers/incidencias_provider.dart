@@ -7,6 +7,7 @@ import 'package:info_carreteras_navarra/models/incidencias_model.dart';
 class IncidenciasProvider {
   List<IncidenciaCarretera> listaIncidencias = [];
   List<String> listaTiposCarretera = [];
+  List<String> listaCarreteraTipo = [];
 
   Future<List<IncidenciaCarretera>> cargarIncidencias() async {
     final datos =
@@ -30,6 +31,21 @@ class IncidenciasProvider {
       }
     });
     return listaTiposCarretera;
+  }
+
+  Future<List<String>> cargarCarreterasTipo(String tipo) async {
+    if (listaIncidencias.length == 0) {
+      await cargarIncidencias();
+    }
+    listaCarreteraTipo = [];
+    listaIncidencias.forEach((cr) {
+      if (listaCarreteraTipo.indexOf(cr.carretera) < 0)  {
+          if(cr.carretera.split("-")[0] == tipo){
+            listaCarreteraTipo.add(cr.carretera);
+          }
+      }
+    });
+    return listaCarreteraTipo;
   }
 }
 

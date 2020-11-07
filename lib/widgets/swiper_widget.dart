@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:info_carreteras_navarra/models/incidenciacarretera_model.dart';
 import 'package:info_carreteras_navarra/models/incidencias_model.dart';
+import 'package:info_carreteras_navarra/screens/listaCarreterasPorTipo.dart';
 import 'package:info_carreteras_navarra/screens/listincidencias_screen.dart';
 
 class SwiperWidget extends StatelessWidget {
@@ -32,11 +33,7 @@ class SwiperWidget extends StatelessWidget {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => ListIncidenciasScreen()));
-            // Aquí se escribirá la acción para que pase a la siguiente pantalla
-            // en vez de ListaIncidenciasScreen, tendrías que poner
-            // ListaCarreterasPorTipo(lista[index]) para ver las carreteras
-            // del tipo pulsado con esa affección
+                    builder: (context) => ListaCarreterasPorTipo(tipo: lista[index])),);
           },
           child: Column(
             children: [
