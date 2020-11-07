@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:info_carreteras_navarra/models/incidenciacarretera_model.dart';
 import 'package:info_carreteras_navarra/providers/incidencias_provider.dart';
-import 'package:info_carreteras_navarra/screens/listaIncidenciasPorCarretera.dart';
 import 'package:info_carreteras_navarra/screens/listview_screen.dart';
 
-class ListaCarreterasPorTipo extends StatelessWidget {
-  final String tipo;
+class ListaIncidenciasPorCarretera extends StatelessWidget {
+  final String carretera;
   
-  ListaCarreterasPorTipo({@required this.tipo});
+  ListaIncidenciasPorCarretera({@required this.carretera});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Carreteras por Tipo'),
+        title: Text('Incidencias'),
       ),
       body: _lista(context),
     );
@@ -20,7 +20,7 @@ class ListaCarreterasPorTipo extends StatelessWidget {
 
   Widget _lista(context) {
     return FutureBuilder(
-      future: incidenciasProvider.cargarCarreterasTipo(tipo),
+      future: incidenciasProvider.cargarIncidenciasFiltradas(carretera),
       initialData: [],
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
@@ -34,18 +34,20 @@ class ListaCarreterasPorTipo extends StatelessWidget {
     );
   }
 
-  _listaElementos(List<String> data, context) {
+  _listaElementos(List<IncidenciaCarretera> data, context) {
     final List<Widget> lst = [];
     data.forEach((ic) { 
       final w = ListTile(
-        title: Text(ic, style: TextStyle(fontSize: 18),),
+        title: Text(ic.ubicacion, style: TextStyle(fontSize: 18),),
+        subtitle: Text(ic.otrosDatos),
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () {
             //print(lista[index]);
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ListaIncidenciasPorCarretera(carretera: ic)),);
+                  builder: (context) => ListaTiposCarretera()),);
+                    //builder: (context) => MapaInfoScreen(incidencia: ic)),);
           },
       );
       lst.add(w);
