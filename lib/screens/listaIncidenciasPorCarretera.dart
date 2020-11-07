@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:info_carreteras_navarra/models/incidenciacarretera_model.dart';
 import 'package:info_carreteras_navarra/providers/incidencias_provider.dart';
 import 'package:info_carreteras_navarra/screens/listview_screen.dart';
+import 'package:info_carreteras_navarra/screens/mapa_info_screen.dart';
 
 class ListaIncidenciasPorCarretera extends StatelessWidget {
   final String carretera;
-  
+
   ListaIncidenciasPorCarretera({@required this.carretera});
 
   @override
@@ -36,19 +37,22 @@ class ListaIncidenciasPorCarretera extends StatelessWidget {
 
   _listaElementos(List<IncidenciaCarretera> data, context) {
     final List<Widget> lst = [];
-    data.forEach((ic) { 
+    data.forEach((ic) {
       final w = ListTile(
-        title: Text(ic.ubicacion, style: TextStyle(fontSize: 18),),
+        title: Text(
+          ic.ubicacion,
+          style: TextStyle(fontSize: 18),
+        ),
         subtitle: Text(ic.otrosDatos),
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () {
-            //print(lista[index]);
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ListaTiposCarretera()),);
-                    //builder: (context) => MapaInfoScreen(incidencia: ic)),);
-          },
+          //print(lista[index]);
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => MapaInfoScreen(incidencia: ic)),
+          );
+        },
       );
       lst.add(w);
       lst.add(Divider());
