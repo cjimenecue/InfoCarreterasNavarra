@@ -58,8 +58,20 @@ class _MapaInfoScreenState extends State<MapaInfoScreen> {
           children: [
             Text(
               incidencia.ubicacion,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-            )
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Text("Gravedad: " +
+                incidencia.gravedad +
+                "\nCausa: " +
+                incidencia.tipo +
+                "\nAfección: " +
+                incidencia.afeccion +
+                "\n\nDatos adicionales: " +
+                incidencia.otrosDatos, style: TextStyle(fontSize: 15),),
+                
           ],
         ));
   }
