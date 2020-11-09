@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:info_carreteras_navarra/models/incidenciacarretera_model.dart';
 import 'package:info_carreteras_navarra/models/incidencias_model.dart';
+import 'package:http/http.dart' as http;
 
 class IncidenciasProvider {
   List<IncidenciaCarretera> listaIncidencias = [];
@@ -12,7 +13,8 @@ class IncidenciasProvider {
 
   Future<List<IncidenciaCarretera>> cargarIncidencias() async {
     final datos =
-        await rootBundle.loadString("assets/data/IncidenciasdeCarreteras.json");
+        //await rootBundle.loadString("assets/data/IncidenciasdeCarreteras.json");
+        await http.read('http://www.navarra.es/appsext/DescargarFichero/default.aspx?codigoAcceso=OpenData&fichero=IncCarreteras/IncidenciasdeCarreteras.json');
     final datosDecodificados = json.decode(datos);
     final openData = datosDecodificados["OpenData"];
     final openDataRow = openData["OpenDataRow"];

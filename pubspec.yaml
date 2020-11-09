@@ -31,6 +31,8 @@ dependencies:
   flutter_swiper: ^1.1.6
   flutter_map: any
   utm: ^0.1.2
+  http: ^0.12.2
+  get: ^3.15.0
 
 dev_dependencies:
   flutter_test:

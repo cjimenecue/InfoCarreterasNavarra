@@ -70,7 +70,9 @@ class _MapaInfoScreenState extends State<MapaInfoScreen> {
                 "\nAfección: " +
                 incidencia.afeccion +
                 "\n\nDatos adicionales: " +
-                incidencia.otrosDatos, style: TextStyle(fontSize: 15),),
+                incidencia.otrosDatos +
+                "\nUltima actualización: " +
+                incidencia.ultimaActualizacion, style: TextStyle(fontSize: 15),),
                 
           ],
         ));
