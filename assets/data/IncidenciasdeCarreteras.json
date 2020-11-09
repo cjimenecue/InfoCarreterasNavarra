@@ -2,7 +2,7 @@
   "OpenData": {
     "OpenDataRow": [
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Paso alternativo",
         "Ubicacion": "NA-6830 VÍA ROMANA PK 0",
         "Fecha_incidencia": "05 Sep 2017",
@@ -17,7 +17,7 @@
         "PK": "0"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Afección en calzada",
         "Ubicacion": "NA-128 PERALTA - CARCASTILLO - Lte.ZARAGOZA PK 3",
         "Fecha_incidencia": "23 Aug 2019",
@@ -32,7 +32,7 @@
         "PK": "3"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Afección en calzada",
         "Ubicacion": "NA-660 VENTA DE ARLAS - CADREITA PK 3",
         "Fecha_incidencia": "23 Aug 2019",
@@ -47,7 +47,7 @@
         "PK": "3"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Carril cortado",
         "Ubicacion": "AP-15 AUTOPISTA DE NAVARRA PK 29",
         "Fecha_incidencia": "05 Oct 2020",
@@ -62,7 +62,7 @@
         "PK": "29"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Paso alternativo",
         "Ubicacion": "NA-660 VENTA DE ARLAS - CADREITA PK 6",
         "Fecha_incidencia": "07 Sep 2020",
@@ -77,7 +77,7 @@
         "PK": "6"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Carril cortado",
         "Ubicacion": "AP-15 AUTOPISTA DE NAVARRA PK 29",
         "Fecha_incidencia": "22 Sep 2020",
@@ -92,7 +92,7 @@
         "PK": "29"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Corte de carril izquierdo",
         "Ubicacion": "AP-15 AUTOPISTA DE NAVARRA PK 30",
         "Fecha_incidencia": "22 Sep 2020",
@@ -107,7 +107,7 @@
         "PK": "30"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Enlace cortado",
         "Ubicacion": "PA-34 ACCESO PAMPLONA OESTE PK 1",
         "Fecha_incidencia": "02 Oct 2020",
@@ -122,52 +122,7 @@
         "PK": "1"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
-        "Titulo": "Carril cortado",
-        "Ubicacion": "A-21 AUTOVÍA DEL PIRINEO PK 30",
-        "Fecha_incidencia": "26 Oct 2020",
-        "Gravedad": "Medio",
-        "Afeccion": "Carril derecho cerrado",
-        "Categoria": "Obras",
-        "Tipo": "Trabajos de mantenimiento",
-        "Otros_datos": "Carril derecho cortado entre los PK 30+600 y 29, sentido Pamplona, por ejecución de zanja de drenaje. ",
-        "Coord_X_en_EPSG_25830": "632303",
-        "Coord_Y_en_EPSG_25830": "4724269",
-        "Carretera": "A-21",
-        "PK": "30"
-      },
-      {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
-        "Titulo": "Carretera cortada sentido Zaragoza",
-        "Ubicacion": "A-68 AUTOVÍA DEL EBRO PK 104",
-        "Fecha_incidencia": "26 Oct 2020",
-        "Gravedad": "Grave",
-        "Afeccion": "Carretera cortada",
-        "Categoria": "Obras",
-        "Tipo": "Trabajos de asfaltado",
-        "Otros_datos": "Carretera cortada en el PK 104, sentido Zaragoza, por reparación del firme. El desvío se realizará por el Polígono Industrial de Ribaforada.",
-        "Coord_X_en_EPSG_25830": "620542",
-        "Coord_Y_en_EPSG_25830": "4650658",
-        "Carretera": "A-68",
-        "PK": "104"
-      },
-      {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
-        "Titulo": "Afecciones",
-        "Ubicacion": "NA-700 PAMPLONA - 'ESTELLA-LIZARRA' (ETXAURI) PK 13",
-        "Fecha_incidencia": "29 Oct 2020",
-        "Gravedad": "Medio",
-        "Afeccion": "Afección en la calzada",
-        "Categoria": "Obras",
-        "Tipo": "Trabajos de asfaltado",
-        "Otros_datos": "Afecciones entre los PK 13 y 16, por trabajos de asfaltado. ",
-        "Coord_X_en_EPSG_25830": "598718",
-        "Coord_Y_en_EPSG_25830": "4738669",
-        "Carretera": "NA-700",
-        "PK": "13"
-      },
-      {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Paso alternativo",
         "Ubicacion": "NA-6320 VIANA - RECAJO PK 5",
         "Fecha_incidencia": "02 Nov 2020",
@@ -182,22 +137,7 @@
         "PK": "5"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
-        "Titulo": "Corte móvil de carril",
-        "Ubicacion": "AP-15 AUTOPISTA DE NAVARRA PK 27",
-        "Fecha_incidencia": "02 Nov 2020",
-        "Gravedad": "Medio",
-        "Afeccion": "Corte carril móvil",
-        "Categoria": "Obras",
-        "Tipo": "Trabajos de jardinería",
-        "Otros_datos": "Corte móvil de carril izquierdo entre los PK 27 y 19, sentido sur, por trabajos de desbroce. ",
-        "Coord_X_en_EPSG_25830": "605088",
-        "Coord_Y_en_EPSG_25830": "4684992",
-        "Carretera": "AP-15",
-        "PK": "27"
-      },
-      {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Carril izquierdo cortado",
         "Ubicacion": "A-10 AUTOVÍA DE LA BARRANCA PK 30",
         "Fecha_incidencia": "02 Nov 2020",
@@ -212,37 +152,97 @@
         "PK": "30"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
-        "Titulo": "Paso alternativo regulado por semáforos",
-        "Ubicacion": "NA-140 AURITZ/BURGUETE - ISABA PK 33",
-        "Fecha_incidencia": "02 Nov 2020",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
+        "Titulo": "Carril derecho cortado",
+        "Ubicacion": "A-1 AUTOVÍA DEL NORTE PK 393",
+        "Fecha_incidencia": "04 Nov 2020",
+        "Gravedad": "Medio",
+        "Afeccion": "Carril derecho cerrado",
+        "Categoria": "Obras",
+        "Tipo": "Trabajos de mantenimiento",
+        "Otros_datos": "Carril derecho cortado entre el PK 393+500 y el PK 396, sentido San Sebastián. Por reparación de estructuras.",
+        "Coord_X_en_EPSG_25830": "563713",
+        "Coord_Y_en_EPSG_25830": "4746723",
+        "Carretera": "A-1",
+        "PK": "393"
+      },
+      {
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
+        "Titulo": "Paso alternativo",
+        "Ubicacion": "NA-125 TUDELA - EJEA PK 4",
+        "Fecha_incidencia": "05 Nov 2020",
         "Gravedad": "Medio",
         "Afeccion": "Paso alternativo",
         "Categoria": "Obras",
-        "Tipo": "OBRAS",
-        "Otros_datos": "Paso alternativo regulado con semáforos entre los PK 33 y 34, por trabajos en el acoplamiento de fibra.",
-        "Coord_X_en_EPSG_25830": "655411",
-        "Coord_Y_en_EPSG_25830": "4750819",
-        "Carretera": "NA-140",
-        "PK": "33"
+        "Tipo": "Trabajos de asfaltado",
+        "Otros_datos": "Paso alternativo entre los PK 4+900 y 6+100, por trabajos de refuerzo del firme. ",
+        "Coord_X_en_EPSG_25830": "621643",
+        "Coord_Y_en_EPSG_25830": "4660498",
+        "Carretera": "NA-125",
+        "PK": "4"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
-        "Titulo": "Salida cortada",
-        "Ubicacion": "AP-15 AUTOPISTA DE NAVARRA PK 109",
-        "Fecha_incidencia": "03 Nov 2020",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
+        "Titulo": "Arcén derecho ocupado",
+        "Ubicacion": "A-12 AUTOVÍA DEL CAMINO DE SANTIAGO PK 12",
+        "Fecha_incidencia": "06 Nov 2020",
+        "Gravedad": "Leve",
+        "Afeccion": "Arcén derecho ocupado",
+        "Categoria": "Obras",
+        "Tipo": "OBRAS",
+        "Otros_datos": "Afecciones en arcén derecho entre los PK 12 y 9+400, sentido Pamplona, por obras.",
+        "Coord_X_en_EPSG_25830": "602848",
+        "Coord_Y_en_EPSG_25830": "4733129",
+        "Carretera": "A-12",
+        "PK": "12"
+      },
+      {
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
+        "Titulo": "Paso alternativo",
+        "Ubicacion": "NA-160 TUDELA - FITERO PK 17",
+        "Fecha_incidencia": "05 Nov 2020",
         "Gravedad": "Medio",
-        "Afeccion": "Ramal cortado",
+        "Afeccion": "Paso alternativo",
         "Categoria": "Obras",
         "Tipo": "Trabajos de mantenimiento",
-        "Otros_datos": "La salida 109, sentido sur, permanecerá cortada entre las 22h del jueves día 5 y las 6h del viernes día 6, por trabajos de mantenimiento. Los desvíos se realizarán por la salida 113.  ",
-        "Coord_X_en_EPSG_25830": "597708",
-        "Coord_Y_en_EPSG_25830": "4750219",
-        "Carretera": "AP-15",
-        "PK": "109"
+        "Otros_datos": "Paso alternativo en el PK 17+600, por reparación de puente. ",
+        "Coord_X_en_EPSG_25830": "598228",
+        "Coord_Y_en_EPSG_25830": "4659489",
+        "Carretera": "NA-160",
+        "PK": "17"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
+        "Titulo": "Afecciones",
+        "Ubicacion": "NA-700 PAMPLONA - 'ESTELLA-LIZARRA' (ETXAURI) PK 13",
+        "Fecha_incidencia": "29 Oct 2020",
+        "Gravedad": "Medio",
+        "Afeccion": "Afección en la calzada",
+        "Categoria": "Obras",
+        "Tipo": "Trabajos de asfaltado",
+        "Otros_datos": "Afecciones entre los PK 13 y 16, por trabajos de asfaltado. ",
+        "Coord_X_en_EPSG_25830": "598718",
+        "Coord_Y_en_EPSG_25830": "4738669",
+        "Carretera": "NA-700",
+        "PK": "13"
+      },
+      {
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
+        "Titulo": "Paso alternativo",
+        "Ubicacion": "NA-132 'ESTELLA-LIZARRA' - TAFALLA - SANGÜESA PK 18",
+        "Fecha_incidencia": "06 Nov 2020",
+        "Gravedad": "Medio",
+        "Afeccion": "Paso alternativo",
+        "Categoria": "Obras",
+        "Tipo": "Trabajos de mantenimiento",
+        "Otros_datos": "Paso alternativo regulado por semáforos y en horario laboral, en el PK 18+800, por trabajos en calzada.",
+        "Coord_X_en_EPSG_25830": "595243",
+        "Coord_Y_en_EPSG_25830": "4713306",
+        "Carretera": "NA-132",
+        "PK": "18"
+      },
+      {
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Corte de carril izquierdo",
         "Ubicacion": "A-1 AUTOVÍA DEL NORTE PK 393",
         "Fecha_incidencia": "30 Oct 2020",
@@ -257,7 +257,22 @@
         "PK": "393"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
+        "Titulo": "Carretera cortada",
+        "Ubicacion": "NA-6710 MURCHANTE - VÍA ROMANA PK 0",
+        "Fecha_incidencia": "05 Nov 2020",
+        "Gravedad": "Grave",
+        "Afeccion": "Carretera cortada",
+        "Categoria": "Red Viaria",
+        "Tipo": "VARIOS",
+        "Otros_datos": "Cortada por causas derivadas del COVID 19.",
+        "Coord_X_en_EPSG_25830": "611066",
+        "Coord_Y_en_EPSG_25830": "4653941",
+        "Carretera": "NA-6710",
+        "PK": "0"
+      },
+      {
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Carril izquierdo cortado",
         "Ubicacion": "A-21 AUTOVÍA DEL PIRINEO PK 50",
         "Fecha_incidencia": "22 Oct 2020",
@@ -272,7 +287,7 @@
         "PK": "50"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Carril izquierdo cortado",
         "Ubicacion": "A-21 AUTOVÍA DEL PIRINEO PK 46",
         "Fecha_incidencia": "22 Oct 2020",
@@ -287,7 +302,7 @@
         "PK": "46"
       },
       {
-        "Ultima_actualizacion": "03 Nov 2020 11:00",
+        "Ultima_actualizacion": "06 Nov 2020 20:24",
         "Titulo": "Carril izquierdo cortado",
         "Ubicacion": "A-12 AUTOVÍA DEL CAMINO DE SANTIAGO PK 76",
         "Fecha_incidencia": "23 Oct 2020",
