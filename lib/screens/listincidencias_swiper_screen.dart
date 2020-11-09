@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:info_carreteras_navarra/providers/incidencias_provider.dart';
+import 'package:info_carreteras_navarra/screens/mapa_completo_screen.dart';
 import 'package:info_carreteras_navarra/widgets/swiper_widget.dart';
 
 class ListIncidenciasSwiperScreen extends StatelessWidget {
@@ -63,7 +64,7 @@ class ListIncidenciasSwiperScreen extends StatelessWidget {
         ),
       )),
       appBar: AppBar(
-        title: Center(child: Text('TIPOS DE CARRETERA')),
+        title: Text('TIPOS DE CARRETERA'),
       ),
       body: _swiper(),
     );
