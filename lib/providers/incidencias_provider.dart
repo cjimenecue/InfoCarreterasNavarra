@@ -14,8 +14,10 @@ class IncidenciasProvider {
   Future<List<IncidenciaCarretera>> cargarIncidencias() async {
     final datos =
         //await rootBundle.loadString("assets/data/IncidenciasdeCarreteras.json");
-        await http.read('http://www.navarra.es/appsext/DescargarFichero/default.aspx?codigoAcceso=OpenData&fichero=IncCarreteras/IncidenciasdeCarreteras.json');
-    final datosDecodificados = json.decode(datos);
+        await http.get(
+            'http://www.navarra.es/appsext/DescargarFichero/default.aspx?codigoAcceso=OpenData&fichero=IncCarreteras/IncidenciasdeCarreteras.json');
+    final dataUTF8 = utf8.decode(datos.bodyBytes);
+    final datosDecodificados = json.decode(dataUTF8);
     final openData = datosDecodificados["OpenData"];
     final openDataRow = openData["OpenDataRow"];
     Incidencias incidencias = Incidencias.fromJsonList(openDataRow);
@@ -42,22 +44,23 @@ class IncidenciasProvider {
     }
     listaCarreteraTipo = [];
     listaIncidencias.forEach((cr) {
-      if (listaCarreteraTipo.indexOf(cr.carretera) < 0)  {
-          if(cr.carretera.split("-")[0] == tipo){
-            listaCarreteraTipo.add(cr.carretera);
-          }
+      if (listaCarreteraTipo.indexOf(cr.carretera) < 0) {
+        if (cr.carretera.split("-")[0] == tipo) {
+          listaCarreteraTipo.add(cr.carretera);
+        }
       }
     });
     return listaCarreteraTipo;
   }
 
-  Future<List<IncidenciaCarretera>> cargarIncidenciasFiltradas(String carretera) async {
+  Future<List<IncidenciaCarretera>> cargarIncidenciasFiltradas(
+      String carretera) async {
     if (listaIncidencias.length == 0) {
       await cargarIncidencias();
     }
     listaIncidenciasFiltradas = [];
     listaIncidencias.forEach((cr) {
-      if (cr.carretera == carretera)  {
+      if (cr.carretera == carretera) {
         listaIncidenciasFiltradas.add(cr);
       }
     });
