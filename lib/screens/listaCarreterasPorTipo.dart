@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:info_carreteras_navarra/providers/incidencias_provider.dart';
 import 'package:info_carreteras_navarra/screens/listaIncidenciasPorCarretera.dart';
 import 'package:info_carreteras_navarra/screens/listview_screen.dart';
@@ -6,6 +7,7 @@ import 'package:info_carreteras_navarra/screens/listview_screen.dart';
 import 'mapa_info_screen.dart';
 
 class ListaCarreterasPorTipo extends StatelessWidget {
+  final box = GetStorage();
   final String tipo;
 
   ListaCarreterasPorTipo({@required this.tipo});
@@ -46,6 +48,7 @@ class ListaCarreterasPorTipo extends StatelessWidget {
         ),
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: () async {
+          box.write("carretera", ic);
           //print(lista[index]);
           var incidencias =
               await incidenciasProvider.cargarIncidenciasFiltradas(ic);
