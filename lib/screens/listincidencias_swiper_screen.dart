@@ -65,6 +65,25 @@ class ListIncidenciasSwiperScreen extends StatelessWidget {
       )),
       appBar: AppBar(
         title: Text('TIPOS DE CARRETERA'),
+        actions: [
+          Builder(
+            builder: (context) => Container(
+              margin: EdgeInsets.only(right: 20),
+              child: GestureDetector(
+                child: Icon(
+                  Icons.update,
+                  //child: Icon(Icons.update),
+                ),
+                onTap: () {
+                  final snackBar = SnackBar(
+                    content: Text("Último dato leído:"),
+                  );
+                  Scaffold.of(context).showSnackBar(snackBar);
+                },
+              ),
+            ),
+          ),
+        ],
       ),
       body: _swiper(),
     );
