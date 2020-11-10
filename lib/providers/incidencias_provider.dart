@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:connectivity/connectivity.dart';
 import 'package:flutter/services.dart';
 import 'package:info_carreteras_navarra/models/incidenciacarretera_model.dart';
 import 'package:info_carreteras_navarra/models/incidencias_model.dart';
@@ -12,11 +13,21 @@ class IncidenciasProvider {
   List<IncidenciaCarretera> listaIncidenciasFiltradas = [];
 
   Future<List<IncidenciaCarretera>> cargarIncidencias() async {
-    final datos =
-        //await rootBundle.loadString("assets/data/IncidenciasdeCarreteras.json");
-        await http.get(
-            'http://www.navarra.es/appsext/DescargarFichero/default.aspx?codigoAcceso=OpenData&fichero=IncCarreteras/IncidenciasdeCarreteras.json');
-    final dataUTF8 = utf8.decode(datos.bodyBytes);
+    // final datos =
+    //     //await rootBundle.loadString("assets/data/IncidenciasdeCarreteras.json");
+    //     await http.get(
+    //         'http://www.navarra.es/appsext/DescargarFichero/default.aspx?codigoAcceso=OpenData&fichero=IncCarreteras/IncidenciasdeCarreteras.json');
+
+    var dataUTF8 =
+        await rootBundle.loadString("assets/data/IncidenciasdeCarreteras.json");
+
+    var connectivityResult = await (Connectivity().checkConnectivity());
+    if (connectivityResult == ConnectivityResult.mobile ||
+        connectivityResult == ConnectivityResult.wifi) {
+      final datos = await http.get(
+          'http://www.navarra.es/appsext/DescargarFichero/default.aspx?codigoAcceso=OpenData&fichero=IncCarreteras/IncidenciasdeCarreteras.json');
+      dataUTF8 = utf8.decode(datos.bodyBytes);
+    }
     final datosDecodificados = json.decode(dataUTF8);
     final openData = datosDecodificados["OpenData"];
     final openDataRow = openData["OpenDataRow"];
