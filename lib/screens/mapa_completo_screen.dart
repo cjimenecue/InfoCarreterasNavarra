@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:info_carreteras_navarra/models/incidenciacarretera_model.dart';
 import 'package:info_carreteras_navarra/screens/listincidencias_swiper_screen.dart';
 import 'package:info_carreteras_navarra/screens/mapa_info_screen.dart';
@@ -17,6 +18,7 @@ class MapaCompletoScreen extends StatefulWidget {
 
 class _MapaCompletoScreenState extends State<MapaCompletoScreen> {
   final mapa = new MapController();
+  final box = GetStorage();
 
   @override
   Widget build(BuildContext context) {
@@ -147,6 +149,7 @@ class _MapaCompletoScreenState extends State<MapaCompletoScreen> {
         point: new LatLng(latlon.lat, latlon.lon),
         builder: (ctx) => GestureDetector(
           onTap: () {
+            box.write("carretera", ic.carretera);
             Navigator.push(
               context,
               MaterialPageRoute(
