@@ -127,7 +127,7 @@ class _MapaCompletoScreenState extends State<MapaCompletoScreen> {
       additionalOptions: {
         'accessToken':
             'pk.eyJ1IjoiY2ppbWVuZWN1ZSIsImEiOiJja2dqNmNmbmkwNGlzMnNtbnRnZ3lhbmdvIn0.9-cq2z84m8a2iqNHYyMBHw',
-        'id': 'mapbox.satellite',
+        'id': 'mapbox.streets',
       },
     );
   }
